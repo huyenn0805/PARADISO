@@ -1,0 +1,406 @@
+/* c.css */
+
+/* Layout */
+.layout-c {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.layout-pageProduct {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Details */
+.productDetail-information {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productDetail--main {
+    flex: 1;
+}
+
+.productDetail--gallery {
+    margin-bottom: 20px;
+}
+
+.product-container-gallery {
+    position: relative;
+}
+
+.wrapbox-gallery {
+    overflow: hidden;
+}
+
+.wrapbox-image {
+    position: relative;
+}
+
+.productGallery_slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-gallery {
+    min-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.icon-gallery {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Product Content */
+.container {
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.wrapbox-left {
+    flex: 0 0 66.66%;
+    padding-right: 20px;
+}
+
+.wrapbox-right {
+    flex: 0 0 33.33%;
+}
+
+.product-heading h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pro-tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag-item {
+    margin-right: 15px;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.wrapbox-detail {
+    margin-bottom: 20px;
+}
+
+.product-description {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Booking Form */
+.form-booking {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pro-total {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapbox-left, .wrapbox-right {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+
+    .productDetail--gallery {
+        margin-bottom: 10px;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 600px 300px 300px;
+    grid-template-rows: 200px 200px;
+    gap: 8px;
+}
+.large {
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+}
+.small {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Container and General Layout */
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-8, .col-lg-4, .col-md-12, .col-12 {
+    padding: 10px;
+}
+
+.wrapbox-inner {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Heading and Tags */
+.product-heading h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pro-tag {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.tag-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.tag-item span {
+    margin-left: 5px;
+    color: #333;
+}
+
+/* Room Details */
+.product-description {
+    margin-top: 20px;
+}
+
+.description-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Price Section */
+#form-booking-pro .product-price {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form-booking-pro .pro-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#form-booking-pro .pro-price .person {
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+}
+
+/* Booking Form */
+.form-booking {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Date Pickers */
+.pro-datepicker label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.t-dates {
+    display: flex;
+    align-items: center;
+}
+
+.t-dates span {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #333;
+}
+
+.icon-down {
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Quantity Controls */
+.group-dropdown-qty {
+    position: relative;
+}
+
+.qty-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qty-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.qty-btn-minus.disabled {
+    cursor: not-allowed;
+}
+
+.pro-input-qty {
+    text-align: center;
+    width: 50px;
+    font-size: 14px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Total Price Section */
+.pro-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.pro-num-total {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.addcart-area {
+    text-align: center;
+}
+
+.add-to-cartProduct {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cartProduct:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapbox-left, .wrapbox-right {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .pro-price {
+        font-size: 24px;
+    }
+
+    .add-to-cartProduct {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+.t-check-in, .t-check-out {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .t-input-check-in, .t-input-check-out {
+    width: 100%;
+    padding-right: 30px; /* Thêm khoảng trống cho icon */
+  }
+  
+  .icon-down {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    pointer-events: none;
+  }
+  
