@@ -19,7 +19,8 @@ import Lienhe from './lienhe';
 import Spa from './spa';
 import Dichvu from './dichvu';
 import Trangchu from './trangchu';
-// import Phong from './phong';
+import Home from './home.js'
+import Phong from './phong';
 // import Cn from './1';
 import ChiTiet from './ChiTiet';
 
@@ -38,6 +39,7 @@ function App() {
                 <article className="blog-page-wrapper">
                     <Routes>
                         <Route path="/trangchu" element={<Trangchu />} />
+                        <Route path="/home" element={<Home />} />
                         {/* <Route path="/BlogPage" element={<BlogPage />} /> */}
                         <Route path="/Banner" element={<Banner />} />
                         <Route path="/tiec" element={<EventSection />} />
@@ -46,6 +48,7 @@ function App() {
                         <Route path="/dichvu" element={<Dichvu/>} />
                         <Route path='dangky' element={<Registration/>} />
                         <Route path='dangnhap' element={<LoginForm/>} />
+                        <Route path='/phong' element={<Phong/>} />
                         
                         <Route path="/ChiTiet" element={<ChiTiet/>} />
                         {/* <Route path="/phong" element={<Phong/>} /> */}

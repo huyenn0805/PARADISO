@@ -24,7 +24,7 @@ function Header() {
                     <nav className="navbar">
                         <ul className="list_menu">
                             <li className="">
-                                <a href="/trangchu" title="Trang chủ"> 
+                                <a href="/home" title="Trang chủ"> 
                                     Trang chủ
                                 </a>
                             </li>
